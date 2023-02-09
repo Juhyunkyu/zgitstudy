@@ -1,0 +1,12 @@
+터미널 
+
+1. git init >>> 깃연결
+2. git status >>상태를 알려줌
+3. git add code.txt 하고 git status를 다시 눌러보면 초록색으로 뜬다
+
+4. 다시 내릴려면 터미널에서도 가르쳐준다 git rm --cached code.txt 하면 다시빨간색으로 변한다
+
+5. git add . (git add 쩜 하면 모든 파일이 다 올라간다)
+
+    파일 관리하다보면 .idea 같은 불필요한 파일들이 다같이 올라가는데 
+    .gitignore 라는 파일을 만들고 거기에 .idea 쳐넣어 놓음 된다
