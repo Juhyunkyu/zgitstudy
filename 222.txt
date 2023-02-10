@@ -28,5 +28,7 @@
     git commit 하고 빔화면 (커서가 깜빡 깜빡) 뜨면 나가는법 :q
 
 8. commit을 하고 변경파일이있으면 git status를 치면 빨간색으로 뜨는데 위에 보면 git add(변경파일을 업로드)를 하던지 git restore(변경된파일을 삭제) 하라고 한다
-
-
+    그리고 git add 랑 git commit을 같이 쓰려면 git commit -am "message" 적음된다 ( -a 는 add, -m 음 git 커밋 메세지 남기는것)
+    참고로 커밋 메세지는 자세히 적어놓는다 나중에 후회할지도 모른다.
+    
+9. 
