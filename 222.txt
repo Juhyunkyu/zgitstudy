@@ -9,4 +9,24 @@
 5. git add . (git add 쩜 하면 모든 파일이 다 올라간다)
 
     파일 관리하다보면 .idea 같은 불필요한 파일들이 다같이 올라가는데 
-    .gitignore 라는 파일을 만들고 거기에 .idea 쳐넣어 놓음 된다
+    .gitignore 라는 파일을 만들고 거기에 .idea 쳐넣어 놓음 이를 무시한다
+    ex) /github/.dandy.txt 이렇게 .gitignore 안에 정해서 적을수도 있다
+
+6. git commit 은 여기서 부터 잘못되면 되돌린다는것
+    실행하면 커서가 깜빡 거리는데 메모를 하란뜻이고 보통 처음에 관행적으로 Initial Commit 이라고 적는다
+    적고 esc누르고 : 콜론 누르면 밑에 깜빡 거리는데 거기서 wq(write quit)를 치던지 git commit -m "Initial commit" 엔터
+
+    commit을 하고 만약 code.txt를 쓰기 싫어졌음 
+    code.txt를 삭제를 하고 commit을 하고 .gitignore안에 넣어준다
+
+7. git log 를 치면 커밋에 대한 고유 번호가 생성된걸 알수있다
+
+    여기서 에러가 나면 이메일 등록이 안되어있다 등록하는 방법은  
+    git config --global user.email "내 이메일"
+    git config --global user.name "내 이름이나 아뒤"
+
+    git commit 하고 빔화면 (커서가 깜빡 깜빡) 뜨면 나가는법 :q
+
+8. commit을 하고 변경파일이있으면 git status를 치면 빨간색으로 뜨는데 위에 보면 git add(변경파일을 업로드)를 하던지 git restore(변경된파일을 삭제) 하라고 한다
+
+
