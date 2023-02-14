@@ -30,5 +30,19 @@
 8. commit을 하고 변경파일이있으면 git status를 치면 빨간색으로 뜨는데 위에 보면 git add(변경파일을 업로드)를 하던지 git restore(변경된파일을 삭제) 하라고 한다
     그리고 git add 랑 git commit을 같이 쓰려면 git commit -am "message" 적음된다 ( -a 는 add, -m 음 git 커밋 메세지 남기는것)
     참고로 커밋 메세지는 자세히 적어놓는다 나중에 후회할지도 모른다.
+
+9. git diff를 치면 수정된게 자세히 보인다
+
+-----------  지금까진 개인컴퓨터로 한거 이제 github 접속해서 가입
+
+10. github 연결
+    git remote --help 쳐보면 힌트가 보인다
+    git remote add <name> url      >>>> name에는 그냥 내가 작성 url은 github에 나의 주소 연결
     
-9. 
+    참고 
+    git remote add zgitstudy https://github.com/Juhyunkyu/zgangi.git 하면 연결
+    확인
+    git remote get-url zgitstudy     >>>> 이름정해준거 넣어주면됨
+
+    github 에 보내기
+    git push <name> master      >>>> push zgitstudy master
