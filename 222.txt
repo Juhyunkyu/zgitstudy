@@ -19,7 +19,7 @@
     commit을 하고 만약 code.txt를 쓰기 싫어졌음 
     code.txt를 삭제를 하고 commit을 하고 .gitignore안에 넣어준다
 
-7. git log 를 치면 커밋에 대한 고유 번호가 생성된걸 알수있다
+7. git log 를 치면 커밋에 대한 고유 번호가 생성된걸 알수있다(짧게 보는것 git shortlog)
 
     여기서 에러가 나면 이메일 등록이 안되어있다 등록하는 방법은  
     git config --global user.email "내 이메일"
@@ -46,3 +46,18 @@
 
     github 에 보내기
     git push <name> master      >>>> push zgitstudy master
+
+    * 깃허브로 보내는데 처음에 오류나서 깃허브 사이트에서 토큰을 생성하고 이름넣고 생성토큰을 비번에 넣음
+
+    연결해제
+    git remote -v 연결 된걸 확인하고
+    git remote remove zgitstudy 하면 연결끊김
+
+    git pull 을 서버에서 가져 오고 난후 수정이나 commit을 한다
+
+    참고 만약 한글이 깨져서 나온다면 set LC_ALL=ko_KR.UTF-8 넣어주고 엔터
+        git status 했을때 깨져서 나오면 git config --global core.quotepath false 하고 엔터
+
+12. git pull origin master 를 하면 서버에서 팀원들이나 수정된 파일들을 받아 온다
+
+11. git reset HEAD 실수로 커밋을 했을때 되돌리는것
